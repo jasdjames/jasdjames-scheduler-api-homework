@@ -13,6 +13,19 @@ textarea{
   padding: 10px;
 }
 
+.list-group-item {
+  padding: 0;
+  
+}
+
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+  margin: 0;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -30,16 +43,12 @@ textarea{
   border-radius: 15px;
 }
 
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
-}
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+
 }
 
 .past {
@@ -69,3 +78,4 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
