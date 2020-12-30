@@ -3,18 +3,33 @@ var dt = DateTime.local();
 var Day = $("#currentDay")
 var newFormat = Day.text(dt.toLocaleString(DateTime.DATE_HUGE)); 
 
-console.log(dt);
+
+
+console.log(dt.hour);
+
 $(".btn-outline-secondary").addClass("saveBtn");
 $(".input-group-prepend").addClass("row");
 $(".input-group-text").addClass("hour time-block");
 $("textarea.form-control").addClass("hour");
 
-// If the hours equals now = give x class 
-   //   heres where I was working -----> if $(dt.startOf('hour')) - 
+function currentTime (){
+    
+if (dt.hour ===  $("textarea").value){
 
-// if the hour is past give y class 
+$("textarea.form-control.hour").addClass("present");
+}if(dt.hour < $("textarea").value ) {
+    
+$("textarea.form-control.hour").addClass("past")
+}else{
+    $("textarea.form-control.hour").addClass("future");
+}
+};
 
-// if this hour is the future give z class --- Check luxon documentation
+currentTime ();
+
+
+
+
 
 
 
