@@ -1,34 +1,45 @@
 var DateTime = luxon.DateTime;
 var dt = DateTime.local();
 var Day = $("#currentDay")
-var newFormat = Day.text(dt.toLocaleString(DateTime.DATE_HUGE)); 
+var newFormat = Day.text(dt.toLocaleString(DateTime.DATE_HUGE));
 
 
+    
 
 console.log(dt.hour);
+console.log($("textarea.form-control").attr("data-hr"))
 
 $(".btn-outline-secondary").addClass("saveBtn");
 $(".input-group-prepend").addClass("row");
 $(".input-group-text").addClass("hour time-block");
-$("textarea.form-control").addClass("hour");
+var textBox = $("textarea.form-control").addClass("hour");
 
-function currentTime (){
+
+
+// I was helped by my instructor with this block and how to make it  work correctly during  office hours
+
+$('textarea.form-control').each(function(el){
+    console.log($(this).attr('data-hr'));
+    console.log (parseInt($(this).attr('data-hr')));
+        if (dt.hour === parseInt($(this).attr('data-hr'))) {
+            $(this).addClass("present");
+        } else if (dt.hour > $(this).attr('data-hr')) {
+            $(this).addClass("past")
+        } else {
+            $(this).addClass("future");
+        }
+        })  
     
-if (dt.hour ===  $("textarea").value){
-
-$("textarea.form-control.hour").addClass("present");
-}if(dt.hour < $("textarea").value ) {
-    
-$("textarea.form-control.hour").addClass("past")
-}else{
-    $("textarea.form-control.hour").addClass("future");
-}
-};
-
-currentTime ();
 
 
 
+
+$(".saveBtn").click(function saveRow(event) {
+
+    localStorage.setItem("text".textBox.innerText);
+
+
+})
 
 
 
