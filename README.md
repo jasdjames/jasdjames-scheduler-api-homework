@@ -1,15 +1,9 @@
 # jasdjames-scheduler-api-homework
 
-## resources 
-
-![Date-fns ] (https://youtu.be/9YZIQAmgD0o)
-![Luxon-YouTube] (https://www.youtube.com/watch?v=U4GJA7pY0O0&t=300s)
-
-Luxon and JQuery documentation - for math and add class 
 ## Description
 The intended purpose of this project to create a daily scheduler that would utilize the monent.js or time api to (I used luxon) so that the user can schedule their day that will save to the local storage. 
 
-Installation
+## Installation
 This project is listed in the the GitHub repostitory at this is link [GitHub Repository] (https://github.com/jasdjames/jasdjames-scheduler-api-homework)
 
 
@@ -18,14 +12,14 @@ This page has been deployed here [Page] (https://jasdjames.github.io/jasdjames-s
 
 ![Photo](assets/images/sced.png) 
 
-Usage
+## Usage
 The page functions as it should. It was a difficult task and I reached out to my instructor and classmates to collaborate on the more difficult parts. I have sited direction portions in which I received assistance in js file. 
 
 
-Credits
+## Credits
 Erum was someone to bounce idea off of and Will helped in a place where I found myself completely stuck. I appreciate this assignment because I can see myself growing as a developer and am able to identify placed where I need help more easily. 
 
-References
+## References
 
 [W3Schools-Operators] https://www.w3schools.com/js/js_comparisons.asp
 
@@ -40,7 +34,7 @@ Luxon and JQuery documentation - for math and add class
 
 (https://api.jquery.com/parent/)
 
-License
+## License
 MIT License
 
 Copyright (c) [2020] [JasDJames]
